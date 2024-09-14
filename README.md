@@ -33,7 +33,7 @@ This project features a web page designed for showcasing a variety of vehicles, 
 3. Customize the styles in `style.css` and add functionality in `app.js` as needed.
 
 
-### Video Example
+## Video Example
 
 
 ## Contact
