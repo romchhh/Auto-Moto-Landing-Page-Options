@@ -1,0 +1,326 @@
+/* Основні стилі */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+/* Верхній блок з логотипом, пошуком і корзиною */
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+header .search-box {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    outline: none;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* Стиль для кнопки корзини */
+
+header .cart-btn {
+    position: relative;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    right: 40px;
+    left: 40%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header .cart-btn:hover {
+    background-color: #ff4a3d;
+}
+
+
+/* Додати відступ до основного контенту для компенсації висоти хедера */
+
+body {
+    margin: 0;
+    padding-top: 60px;
+}
+
+
+/* Стиль для анімації */
+
+.fly-to-cart {
+    position: absolute;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+    animation: flyToCart 1s forwards;
+}
+
+@keyframes flyToCart {
+    0% {
+        transform: scale(1) translateY(0) translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.5) translateY(-100px) translateX(100px);
+        opacity: 0;
+    }
+}
+
+
+/* Стиль для відображення кількості товарів у корзині */
+
+.cart-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff4a3d;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* Контейнер для меню і айтемів */
+
+.main-content {
+    display: flex;
+    padding: 20px;
+}
+
+
+/* Ліва панель навігації */
+
+.navigation {
+    width: 20%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.navigation h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation ul li {
+    margin-bottom: 15px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: normal;
+    text-align: center;
+}
+
+.navigation ul li a:hover {
+    background-color: #e0e0e0;
+    color: #000;
+    font-weight: bold;
+}
+
+.navigation ul li a.active {
+    background-color: #d1d1d1;
+    font-weight: bold;
+    color: #000;
+}
+
+
+/* Стиль для айтемів */
+
+.item-grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.item-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    min-width: 200px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-card img {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    object-fit: cover;
+    max-height: 200px;
+    margin-bottom: 15px;
+}
+
+.item-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 6px 0;
+}
+
+.item-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.item-card button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item-card button:hover {
+    background-color: #ff4a3d;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Медіа-запити для мобільних пристроїв */
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    header .search-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .navigation {
+        width: 100%;
+        margin-right: 0;
+        padding: 10px;
+    }
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+
+/* Медіа-запити для великих екранів */
+
+@media (min-width: 1200px) {
+    header {
+        width: 100%;
+    }
+    .item-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .main-content {
+        padding: 40px;
+        flex-direction: row;
+    }
+    .navigation {
+        width: 25%;
+    }
+    .item-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
