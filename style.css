@@ -1,0 +1,235 @@
+/* Основні стилі */
+
+html,
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding-top: 60px;
+}
+
+
+/* Header styles */
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+header .logo:hover {
+    color: #8a0b00;
+    text-decoration: none;
+}
+
+
+/* Контент */
+
+main.content {
+    display: flex;
+    flex-wrap: wrap;
+    /* Додаємо можливість обгортання для мобільних пристроїв */
+    padding: 20px;
+    margin-top: 60px;
+}
+
+
+/* Ліва колонка (автомобілі) */
+
+.left-column {
+    flex: 4;
+    margin-right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-column img.topic-image {
+    width: 400px;
+    height: 350px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.left-column h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.left-column article {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.left-column .topic-content {
+    flex-grow: 1;
+}
+
+.left-column .topic-content h3 {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.left-column .topic-content p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.left-column .author {
+    font-style: italic;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+/* Права колонка (мотоцикли) */
+
+.right-column {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.right-column h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.right-column article {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.right-column .topic-content {
+    flex-grow: 1;
+}
+
+.right-column .topic-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.right-column .topic-content p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #8a0b00;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+    }
+    .footer-content a {
+        margin: 0 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    main.content {
+        display: flex;
+        flex-wrap: nowrap;
+        /* Уникаємо обгортання для великих екранів */
+    }
+    .left-column {
+        margin-right: 20px;
+    }
+    .right-column {
+        background-color: #f9f9f9;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 767px) {
+    main.content {
+        flex-direction: column;
+        /* На мобільних пристроях розташування колонки одна під іншою */
+    }
+    .left-column,
+    .right-column {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .left-column article,
+    .right-column article {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-column img.topic-image {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
