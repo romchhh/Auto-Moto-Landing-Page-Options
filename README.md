@@ -33,7 +33,17 @@ This project features a web page designed for showcasing a variety of vehicles, 
 3. Customize the styles in `style.css` and add functionality in `app.js` as needed.
 
 
-## Video Example
+## Screenshots
+![image](https://github.com/user-attachments/assets/f3a0d047-08a5-4a43-95d3-f7338971592c)
+![image](https://github.com/user-attachments/assets/46837fab-3349-4047-af62-ab2a14754f1f)
+![image](https://github.com/user-attachments/assets/a6791640-7aa4-4689-bb09-9777be02a43d)
+![image](https://github.com/user-attachments/assets/2b874a43-b102-4831-bb15-73529081e7ac)
+![image](https://github.com/user-attachments/assets/09a08655-ca8f-45b4-b536-fefbdefd79cb)
+![image](https://github.com/user-attachments/assets/fdc34423-96ea-4bd3-9d09-14fc1303757c)
+
+
+
+
 
 
 ## Contact
