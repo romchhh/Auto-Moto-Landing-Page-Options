@@ -38,5 +38,5 @@ This project features a web page designed for showcasing a variety of vehicles, 
 
 ## Contact
 
-For any questions or feedback, please reach out via the contact details provided on the website.
+For any questions or support, please contact [roman.fedoniuk@gmail.com](mailto:roman.fedoniuk@gmail.com).
 
