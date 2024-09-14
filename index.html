@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMoto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <!-- Додано тут -->
+</head>
+
+<body>
+    <header>
+        <div class="logo">AutoMoto</div>
+        <input type="text" class="search-box" placeholder="Пошук...">
+    </header>
+
+    <div class="top-sections-container">
+        <div class="top-sections">
+            <a href="#car-section" class="top-section">Автомобілі</a>
+            <a href="#motorcycle-section" class="top-section">Мотоцикли</a>
+            <a href="#about-us" class="top-section">Про нас</a>
+            <a href="#contact" class="top-section">Контакти</a>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#" class="active">Головна</a></li>
+                <li><a href="#car-section">Автомобілі</a></li>
+                <li><a href="#motorcycle-section">Мотоцикли</a></li>
+                <li><a href="#">Досліджувати</a></li>
+                <li><a href="#">Повідомлення</a></li>
+                <li><a href="#">ШІ</a></li>
+                <li><a href="#">Секція 5</a></li>
+                <li><a href="#">Секція 6</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="content">
+                <h1>Останні Новини Автомобілів та Мотоциклів</h1>
+
+                <section id="car-section" class="car-section fade-in">
+                    <h2>Автомобілі</h2>
+                    <img src="assets/img/auto.jpg" alt="Автомобіль" class="content-image">
+                    <p>Досліджуйте найновіші моделі автомобілів, від класичних до електричних. Відчуття за кермом, технічні характеристики та багато іншого чекають на вас у нашому огляді.</p>
+                    <p>Останні новинки від відомих виробників, тест-драйви та порівняння різних моделей. Перейдіть до нашого розділу, щоб дізнатися більше.</p>
+                </section>
+
+                <section id="motorcycle-section" class="motorcycle-section fade-in">
+                    <h2>Мотоцикли</h2>
+                    <img src="assets/img/moto.jpg" alt="Мотоцикл" class="content-image">
+                    <p>Мотоцикли різних типів, від спортивних до туристичних. Дізнайтеся про нові моделі, технології та аксесуари, які зроблять ваші поїздки ще комфортнішими.</p>
+                    <p>Відгуки користувачів, поради по вибору та рекомендації від експертів. Прочитайте наші статті, щоб знайти ідеальний мотоцикл для себе.</p>
+                </section>
+
+                <section id="about-us" class="about-us-section fade-in">
+                    <h2>Про нас</h2>
+                    <p>Ми є прямі постачальники з американських аукціонів, маємо дилерську ліцензію та зареєстровану компанію в США (Каліфорнія). Ми повністю контролюємо процес покупки, доставки та ремонту автомобілів з США, працюючи без посередників. Перед
+                        покупкою ми можемо провести оцінку та перевірку авто на аукціоні, забезпечуючи чесні ціни та відсутність прихованих проблем. Гарантуємо прозорість цін та відсутність прихованих витрат.</p>
+                    <p>Наше сертифіковане СТО в Лос-Анджелесі проводить дефектовку, ремонт та технічне обслуговування, готуючи авто до транспортування. Наш кузовний та слюсарний цех в Києві гарантує якісний ремонт та ідеальний стан автомобіля, забезпечуючи
+                        повну гарантію на наші послуги.</p>
+                    <p>Ваше авто отримає повний догляд, включаючи детейлінг та полірування, надаючи йому новий блиск. Ми також доставляємо найрідкісніші та ексклюзивні автомобілі.</p>
+                    <p>Отримайте повний пакет автомобільного обслуговування від Detroit Auto: від вибору та доставки американських авто до якісного ремонту в наших сертифікованих центрах.</p>
+                </section>
+
+                <section class="contact section fade-in" id="contact">
+                    <h2 class="section__title">Контакти</h2>
+                    <span class="section__subtitle">Зв'яжіться з нами</span>
+
+                    <div class="contact__container container grid">
+                        <div>
+                            <div class="contact__information">
+                                <i class="uil uil-calling contact__icon"></i>
+                                <div>
+                                    <h3 class="contact__title">Телефон</h3>
+                                    <span class="contact__subtitle">
+                                        <a href="tel:380960908006">+380960908006</a>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="contact__information">
+                                <i class="uil uil-envelope-minus contact__icon"></i>
+                                <div>
+                                    <h3 class="contact__title">Електронна пошта</h3>
+                                    <span class="contact__subtitle">roman.fedoniuk@gmail.com</span>
+                                </div>
+                            </div>
+
+                            <div class="contact__information">
+                                <i class="uil uil-map-marker contact__icon"></i>
+                                <div>
+                                    <h3 class="contact__title">Місцезнаходження</h3>
+                                    <span class="contact__subtitle">Київ, Україна</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="assets/img/mappa.jpg" alt="Контакти" class="contact__photo">
+                </section>
+            </div>
+        </main>
+
+        <aside class="aside">
+            <h2>Автомобільні Тренди</h2>
+            <div class="news-snippet">
+                <p class="news-item"><strong>Нове покоління електричних автомобілів:</strong> Чому вони змінюють правила гри?</p>
+                <p class="news-item"><strong>Модернізація класичних моделей:</strong> Що нового у рестайлінгу?</p>
+                <p class="news-item"><strong>Спортивні автомобілі 2024:</strong> Які моделі варто чекати?</p>
+                <p class="news-item"><strong>Автодроми та тест-драйви:</strong> Де найкраще випробувати новинки?</p>
+                <p class="news-item"><strong>Технології безпеки:</strong> Як новітні розробки покращують автомобілі?</p>
+            </div>
+            <a href="#" class="read-more">Більше новин...</a>
+        </aside>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 nowayrm</p>
+            <a href="#about-us">Про нас</a>
+            <a href="#contact">Контакти</a>
+        </div>
+    </footer>
+</body>
+
+</html>
