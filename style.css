@@ -1,0 +1,394 @@
+/* Основні стилі */
+
+html,
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding-top: 60px;
+}
+
+
+/* Header styles */
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    margin-left: 50px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+header.logo:hover {
+    color: #8a0b00;
+    text-decoration: none;
+}
+
+header .register-btn {
+    background-color: #8a0b00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header .register-btn:hover {
+    background-color: #ff4a3d;
+}
+
+
+/* Main content section */
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.content-left,
+.content-right {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.content-left h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.content-left p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.styled-btn {
+    background-color: #8a0b00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-btn:hover {
+    background-color: #ff4a3d;
+}
+
+.content-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right .photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* Divider style */
+
+.divider {
+    border: 0;
+    height: 2px;
+    background: #ddd;
+    margin: 40px 0;
+}
+
+
+/* Topics section styles */
+
+.topics-section {
+    padding: 20px;
+    text-align: center;
+    background-image: url('assets/img/moto.jpg');
+    /* Замість 'path/to/your/background-image.jpg' вставте шлях до вашого зображення */
+    background-size: cover;
+    /* Заповнює весь контейнер */
+    background-position: center;
+    /* Центрує зображення */
+    background-repeat: no-repeat;
+    /* Не повторює зображення */
+}
+
+.topics-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.topic-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1;
+    max-width: 300px;
+}
+
+.topic-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.topic-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.centered-btn {
+    display: block;
+    margin: 30px auto;
+}
+
+
+/* Additional Topics Section Styles */
+
+.additional-topics {
+    padding: 20px;
+    text-align: center;
+}
+
+.additional-topics h2 {
+    font-size: 2vw;
+    /* Адаптація шрифту */
+    margin-bottom: 5vw;
+    /* Відступ знизу заголовка */
+    margin-top: 1vw;
+    color: #333;
+}
+
+.additional-topics .topics-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Три стовпці по дефолту */
+    gap: 2vw;
+    /* Відстань між картками */
+}
+
+.additional-topics .topic-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 2vw;
+    /* Відступ всередині картки */
+}
+
+
+/* Використовуємо grid-column, щоб три елементи займали перший рядок */
+
+.additional-topics .topics-container> :nth-child(4),
+.additional-topics .topics-container> :nth-child(5) {
+    grid-column: span 1;
+    /* Кожен елемент займає один стовпець */
+}
+
+.additional-topics .topics-container> :nth-child(6) {
+    grid-column: span 3;
+    /* Шостий елемент займає весь рядок */
+}
+
+.additional-topics .topic-card h3 {
+    font-size: 1.5vw;
+    /* Розмір шрифту заголовка */
+    margin-bottom: 1vw;
+    /* Відступ знизу заголовка картки */
+}
+
+.additional-topics .topic-card p {
+    font-size: 1vw;
+    /* Розмір шрифту тексту */
+    line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+    .additional-topics .topics-container {
+        grid-template-columns: repeat(3, 1fr);
+        /* Три стовпці для середніх екранів */
+    }
+}
+
+@media (max-width: 800px) {
+    .additional-topics .topics-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* Два стовпці для маленьких екранів */
+        grid-template-rows: auto auto auto;
+        /* Три ряди для маленьких екранів */
+    }
+}
+
+.centered-btn {
+    display: block;
+    margin: 2vw auto;
+    /* Відступ для кнопки */
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.footer-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+    justify-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer-items a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-items a:hover {
+    background-color: #444;
+}
+
+
+/* For tablets and mobile devices */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        /* Розміщення елементів у стовпчику на малих екранах */
+        align-items: flex-start;
+        /* Вирівнювання по лівому краю */
+    }
+    header .logo {
+        margin-top: 20px;
+    }
+    header .register-btn {
+        margin-left: 0;
+        /* Видалення лівого відступу */
+        margin-top: -35px;
+        /* Відступ зверху для відстані від інших елементів */
+        align-self: flex-end;
+        /* Вирівнювання кнопки до правого краю контейнера */
+    }
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .content-left,
+    .content-right {
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+    }
+    .content-left {
+        margin-bottom: 20px;
+    }
+    .topics-container,
+    .additional-topics .topics-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .topic-card {
+        max-width: 100%;
+    }
+    .additional-topics .topics-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .topics-container,
+    .additional-topics .topics-container {
+        flex-wrap: nowrap;
+    }
+    .additional-topics .topics-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
